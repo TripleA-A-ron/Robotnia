@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const App = () => {
+const Home = () => {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
