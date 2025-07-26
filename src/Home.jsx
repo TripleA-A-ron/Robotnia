@@ -9,7 +9,7 @@ const Home = () => {
         const apiKey = import.meta.env.VITE_TBA_API_KEY;
         console.log('TBA API Key:', apiKey);
 
-        const response = await fetch('https://www.thebluealliance.com/api/v3/events/2024', {
+        const response = await fetch('https://www.thebluealliance.com/api/v3/events/2025', {
           headers: {
             'X-TBA-Auth-Key': apiKey,
           },
@@ -36,7 +36,7 @@ const Home = () => {
       <p>This is your FRC match prediction site powered by Blue Alliance data.</p>
 
       <div className="mt-6">
-        <h2 className="text-xl font-semibold mb-2">FRC 2024 Events</h2>
+        <h2 className="text-xl font-semibold mb-2">FRC 2025 Events</h2>
         {events.length > 0 ? (
           <ul className="list-disc list-inside">
             {events.slice(0, 10).map((event) => (
